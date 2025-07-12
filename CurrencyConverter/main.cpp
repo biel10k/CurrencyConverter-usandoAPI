@@ -5,7 +5,7 @@
 #include <fstream>
 #include <string>
 
-// Cores ANSI
+
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -13,7 +13,7 @@
 #define BLUE    "\033[34m"
 #define CYAN    "\033[36m"
 
-// Função para ler API Key do arquivo config.txt
+
 std::string lerApiKey(const std::string& caminho) {
     std::ifstream arquivo(caminho);
     if (!arquivo.is_open()) {
@@ -28,13 +28,13 @@ std::string lerApiKey(const std::string& caminho) {
     return chave;
 }
 
-// Função para limpar buffer de entrada
+
 void limparEntrada() {
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
 
-// Função para exibir uma "caixa" com título
+
 void exibirCaixa(const std::string& titulo) {
     std::string borda(titulo.size() + 4, '=');
     std::cout << CYAN << "╔" << borda << "╗\n";
@@ -42,7 +42,7 @@ void exibirCaixa(const std::string& titulo) {
     std::cout << "╚" << borda << "╝" << RESET << "\n\n";
 }
 
-// Menu para escolher moeda com cores e bordas
+
 std::string escolherMoeda() {
     std::map<int, std::string> opcoes = {
         {1, "USD"},

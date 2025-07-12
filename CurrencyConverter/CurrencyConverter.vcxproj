@@ -131,6 +131,12 @@
     <ClInclude Include="include\converter.h" />
     <ClInclude Include="include\json.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitgnore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="config.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
